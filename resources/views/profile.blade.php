@@ -32,8 +32,6 @@
                                             <li>Jago C--</li>
                                             <li>Suka menabung</li>
                                             <li>Baik hati</li>
-                                            <li>Enggak red flag</li>
-                                            <li>Suka mommy cantik</li>
                                             <li>Pendekar Ngawi</li>
                                     </ul>
                     </div>
