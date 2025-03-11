@@ -1,18 +1,30 @@
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pengguna</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container mt-4">
-            <div class="card">
-        <div class="card-header">
-            <h3>Profil Saya</h3>
+@extends('layouts.app')
+@section('title', 'Profil Pengguna')
+@section('content')
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <div class="card text-center p-4" style="width: 38rem;">
+                <div class="card-header">
+                    Profil Profesional
+                </div>
+                <div class="card-body">
+                    <img src="Rusdi_Omaygot.png" alt="Profile Picture" class="profile-img mx-auto d-block">
+                    <h4>Imanuel Tegar NIA</h4>
+                    <p><strong>Siswa SMKN 1 Sayung</strong></p>
+                    <p><strong>Email:</strong> imanueltegarn@gmail.com</p>
+                    <p><strong>Bio:</strong> <em>Sayung to Mekkah</em></p>
+                    <h5 class="mt-4">Keahlian:</h5>
+                    <ul class="skills-list">
+                        <li>XP-Laner Pro</li>
+                        <li>Investor Cuan Maksimal</li>
+                        <li>Ahli Masak</li>
+                        <li>Master C--</li>
+                        <li>Pendekar Ngawi</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+<<<<<<< HEAD
         <div class="card-body">
             
             <img src="Rusdi_Omaygot.png" alt="Profile Picture" width="100">
@@ -35,7 +47,7 @@
                                             <li>Pendekar Ngawi</li>
                                     </ul>
                     </div>
+=======
+>>>>>>> 9548539 (second update)
     </div>
-    </div>
-</body>
-</html>
+@endsection
