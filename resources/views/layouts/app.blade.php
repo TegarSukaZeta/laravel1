@@ -7,57 +7,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
-        body {
-            background-color: #eef1f6;
+        html, body {
+            background-color: #fce4ec;
             font-family: 'Poppins', sans-serif;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1;
         }
         .card {
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
             border-radius: 15px;
-            overflow: hidden;
-            background: white;
             transition: transform 0.3s ease-in-out;
         }
         .card:hover {
             transform: translateY(-5px);
         }
-        .card-header {
-            background: linear-gradient(135deg, #007bff, #0056b3);
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 1.8rem;
-        }
-        .profile-img {
-            border-radius: 50%;
-            border: 5px solid #007bff;
-            width: 130px;
-            height: 130px;
+        .card-img-top {
+            height: 70vh;
             object-fit: cover;
         }
-        .card-body h4 {
-            font-weight: 600;
-            margin-top: 10px;
+        .card-body {
+            min-height: 150px;
         }
-        .card-body p {
-            font-size: 1rem;
-            color: #333;
+        .jumbotron {
+            padding: 3rem 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
         }
-        .skills-list {
-            padding-left: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        body {
+            background-color: #fce4ec;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
-        .skills-list li {
-            list-style: none;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 8px;
-            background: #007bff;
+        .navbar {
+            background-color: #ff80ab !important;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fffafc;
+        }
+        .btn-pink {
+            background-color: pink;
             color: white;
-            font-weight: 500;
+            border: 1px solid pink;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-pink:hover {
+            background-color: #ff69b4; /* Warna pink lebih gelap saat hover */
+        } 
+        .btn-primary {
+            background-color:#ff80ab;
         }
 
     </style>
@@ -71,10 +80,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/kontak">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route ('home')}}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route ('profile')}}">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route ('about')}}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route ('contact')}}">Contact Us</a></li>
                 </ul>
             </div>
         </div>

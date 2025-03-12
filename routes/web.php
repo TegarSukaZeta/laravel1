@@ -14,5 +14,7 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', [ProfileController::class, 'home']);
-Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('/', [ProfileController::class, 'home'])->name('home');
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::get('/about', [ProfileController::class, 'about'])->name('about');
+Route::get('/contact', [ProfileController::class, 'contact'])->name('contact');
