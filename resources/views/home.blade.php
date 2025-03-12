@@ -49,20 +49,6 @@
                         <footer class="blockquote-footer">Andi</footer>
                     </blockquote>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://jobsheet4.radivahera.my.id/images/user2.png" class="rounded-circle mb-3" alt="Budi">
-                    <blockquote class="blockquote">
-                        <p>"Fitur-fiturnya keren dan desainnya menarik."</p>
-                        <footer class="blockquote-footer">Budi</footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://jobsheet4.radivahera.my.id/images/user3.png" class="rounded-circle mb-3" alt="Citra">
-                    <blockquote class="blockquote">
-                        <p>"Sangat puas dengan performa dan keandalannya."</p>
-                        <footer class="blockquote-footer">Citra</footer>
-                    </blockquote>
-                </div>
             </div>
         </div>
     </div>
